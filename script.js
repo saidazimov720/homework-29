@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () =>{
             }
             productNameInput.value = '';
             productPriceInput.value = '';
+            productImageInput.value = '';
+            submitButton.textContent = 'Add Product';
+            saveProducts();
+            renderProducts();
         })
     })
     });
