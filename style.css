@@ -73,3 +73,6 @@ li button:hover{
 .edit-btn{
     background-color: #007bff;
 }
+.edit-btn:hover{
+    background-color: #0056b3;
+}
