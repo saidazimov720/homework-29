@@ -3,5 +3,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const productList = document.getElementById('productList');
     const productNameInput = document.getElementById('productName');
     const productPriceInput = document.getElementById('productPrice');
-    
+    const productImageInput = document.getElementById('productImage');
+    const submitButton = document.getElementById('submitButton');
+    const productIdInput = document.getElementById('productId');
 })
