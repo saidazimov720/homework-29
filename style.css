@@ -66,6 +66,10 @@ li img{
     border-radius: 8px;
     margin-right: 10px;
 }
+li div{
+    display: flex;
+    gap: 10px;
+}
 li button{
     background-color: #dc3545;
     border: none;
