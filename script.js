@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts();
     }
 
-    
+    function saveProducts() {
+        const storedProducts = JSON.parse(localStorage.getItem())
+    }
 
     window.renderProducts = function renderProducts() {
         productList.innerHTML = '';
