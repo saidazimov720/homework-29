@@ -67,3 +67,6 @@ li button{
     color: white;
     cursor: pointer;
 }
+li button:hover{
+    background-color: #c82333;
+}
