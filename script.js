@@ -48,5 +48,14 @@ document.addEventListener('DOMContentLoaded', () =>{
             alert('Upload the image file');
             return;
         }
+
+        getBase64(imageFile, (imageBase64) =>{
+            const productData = {
+                name, 
+                price,
+                image: imageBase64
+            };
+            
+        })
     })
     });
