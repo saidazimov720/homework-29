@@ -33,5 +33,14 @@ document.addEventListener('DOMContentLoaded', () =>{
                 productList.appendChild(li);
         });
     }
-    
+    function getBase64(file, callback) {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => callback(reader.result);
+        reader.onerror = (error) => console.log('Error: ', error);
+    }
+    productForm.addEventListener('submit', (event) =>{
+        event.preventDefault();
+        const name = productNameInput.value;
+    })
     });
