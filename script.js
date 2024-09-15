@@ -6,4 +6,9 @@ document.addEventListener('DOMContentLoaded', () =>{
     const productImageInput = document.getElementById('productImage');
     const submitButton = document.getElementById('submitButton');
     const productIdInput = document.getElementById('productId');
+
+    let products = [];
+    let editIndex = -1;
+
+    
 })
