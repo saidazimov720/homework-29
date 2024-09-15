@@ -70,3 +70,6 @@ li button{
 li button:hover{
     background-color: #c82333;
 }
+.edit-btn{
+    background-color: #007bff;
+}
