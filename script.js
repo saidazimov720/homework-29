@@ -68,6 +68,14 @@ document.addEventListener('DOMContentLoaded', () =>{
             submitButton.textContent = 'Add Product';
             saveProducts();
             renderProducts();
-        })
-    })
+        });
+    });
+
+    window.editProduct = (index) =>{
+        const product = products[index];
+        productNameInput.value = product.name;
+        productPriceInput.value = product.price;
+        editIndex = index;
+        submitButton.textContent = 'Update  Product';
+    }
     });
