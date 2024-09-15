@@ -16,5 +16,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         renderProducts()
     };
 
-    
+    function saveProducts() {
+        localStorage.setItem('products', JSON.stringify(products));
+    }
 })
