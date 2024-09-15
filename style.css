@@ -59,3 +59,11 @@ li{
     border-radius: 4px;
     border: 1px solid #ddd;
 }
+li button{
+    background-color: #dc3545;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
