@@ -42,5 +42,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     productForm.addEventListener('submit', (event) =>{
         event.preventDefault();
         const name = productNameInput.value;
+        const price = parseFloat(productPriceInput.value);
+        const imageFile = productImageInput.files[0];
+        
     })
     });
