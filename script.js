@@ -17,7 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function saveProducts() {
-        const storedProducts = JSON.parse(localStorage.getItem())
+        try {
+            localStorage.setItem('products', JSON.stringify(products));
+        } catch (e) {
+            if (e.name === 'QuotaExceededError') {
+                alert("Memory is Full");
+            }
+        }
     }
 
     window.renderProducts = function renderProducts() {
