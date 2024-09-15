@@ -55,7 +55,15 @@ document.addEventListener('DOMContentLoaded', () =>{
                 price,
                 image: imageBase64
             };
-            
+
+            if (editIndex === -1) {
+                products.push(productData);
+            }else{
+                products[editIndex] = productData;
+                editIndex = -1;
+            }
+            productNameInput.value = '';
+            productPriceInput.value = '';
         })
     })
     });
