@@ -10,5 +10,11 @@ document.addEventListener('DOMContentLoaded', () =>{
     let products = [];
     let editIndex = -1;
 
+    function loadProducts() {
+        const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
+        products = storedProducts;
+        renderProducts()
+    };
+
     
 })
