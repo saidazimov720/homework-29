@@ -13,10 +13,25 @@ document.addEventListener('DOMContentLoaded', () =>{
     function loadProducts() {
         const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
         products = storedProducts;
-        renderProducts()
+        renderProducts();
     };
 
     function saveProducts() {
         localStorage.setItem('products', JSON.stringify(products));
     }
-})
+    function renderProducts() {
+        productList.innerHTML = '';
+        products.forEach((product, index) => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+                <span>${product.name} - $${product.price}</span>
+                <div>
+                    <button class="edit-btn" onclick="editProduct(${index})">Edit</button>
+                    <button onclick="deleteProduct(${index})">Delete</button>
+                </div>`;
+                productList.appendChild(li);
+        });
+    }
+    
+    });
