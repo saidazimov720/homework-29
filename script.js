@@ -77,5 +77,12 @@ document.addEventListener('DOMContentLoaded', () =>{
         productPriceInput.value = product.price;
         editIndex = index;
         submitButton.textContent = 'Update  Product';
-    }
+    };
+
+    window.deleteProduct = (index) =>{
+        products.splice(index, 1);
+        saveProducts();
+        renderProducts();
+    };
+    loadProducts();
     });
