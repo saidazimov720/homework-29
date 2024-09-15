@@ -50,3 +50,12 @@ ul{
     list-style-type: none;
     margin-top: 20px;
 }
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
