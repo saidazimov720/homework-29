@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () =>{
         const name = productNameInput.value;
         const price = parseFloat(productPriceInput.value);
         const imageFile = productImageInput.files[0];
-        
+        if (!imageFile) {
+            alert('Upload the image file');
+            return;
+        }
     })
     });
