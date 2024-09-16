@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const ctx = canvas.getContext('2d');
                 ctx.drawImage(img, 0, 0, width, height);
 
-                const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);  // Compress at 70% quality
+                const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
                 callback(compressedDataUrl);
             };
         };
